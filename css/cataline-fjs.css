@@ -1,0 +1,402 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Newsreader', serif;
+	color: white;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.w50{
+	width: 50%;
+}
+.w100{
+	width: 100%;
+}
+
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+div.bg{
+	
+	width: 100%;
+	height:auto;
+	background-color: black;
+}
+
+
+
+/*******************/
+section.public{
+	width: 100%;
+	height: 600px;
+	margin-top: 55px;
+	float: left;
+	background-color: rgba(0,0,0,0,);
+}
+section.public .redes-sociais{
+	width: 5%;
+	height: 600px;
+	float: left;
+	border: 1px solid white;
+	border-left: 0;
+}
+section.public .container-redes-sociais{
+	width: 100%;
+	margin-top: 310px;
+	text-align: center;
+}
+section.public .container-redes-sociais div{
+	width: 100%;
+	margin-top: 35px;
+}
+.redes-sociais img{
+	width: 30px;
+	height: 30px;
+}
+.redes-sociais img:hover{
+	border: 1px solid white;
+}
+
+section.public .banner-cursos{
+	width: 90%;
+	height: 100%;
+	float: left;
+	background-image: url(../imagens/banner-informatica.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+}
+.banner-cursos .videoz{
+	width: 100%;
+	height: 100% ;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+
+section.public .rectangle{
+	width: 5%;
+	height: 100%;
+	float:left;
+	border:1px solid white;
+}
+/***********Acessar Curso*************/
+section.btn-fixo{
+	width: 100%;
+	height: 175px;
+	border: 1px solid rgba(255,255,255,0.2);
+	text-align: center;
+	position: fixed;
+	top: 95%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: black;
+	z-index: 999;
+	border-left: 0;
+	border-right: 0;
+}
+section.btn-fixo li{
+	list-style-type: none;
+	margin-top: 8px;
+}
+section.btn-fixo a{
+	text-decoration: none;
+	font-size: 25px;
+	padding: 30px;
+	
+}
+
+/*******************Sobre***************/
+section.sobre{
+	width: 100%;
+	height: 800px;
+	margin-top: 200px;
+	text-align: center;
+}	
+
+
+section.sobre .container > h2{
+	width: 520px;
+	background-color: black;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	position: relative;
+	top: -10px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 24px;
+
+}
+section.sobre .container > h2.h2{
+	width: 300px;
+}
+section.sobre .img-sobre{
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	float: left;
+	background-image: linear-gradient(to top right,rgba(255,255,255,0.2),black,rgba(255,255,255,0.3));
+	border: 3px solid rgba(255,255,255,0.2);
+	
+	border-radius: 70px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+}
+.img-sobre img{
+	width: 95%;
+	height: 95%;
+	border-radius: 70px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+}
+section.sobre .container-sobre{
+	width: 50%;
+	float: left;
+	margin-top: 30px;
+}
+section.sobre .container-sobre p{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 200px;
+	margin-bottom: 10px;
+	font-size:  21px;
+	line-height: 22px;
+	
+	
+}
+section.sobre .container-sobre p.p{
+	margin-top: 40px;
+}
+
+
+/*******************acessar site************************/
+
+section.acessar-site{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+}
+section.acessar-site h2{
+	width: 700px;
+	background-color: black;
+	margin: 0 auto;
+	position: relative;
+	top: -10px;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+section.acessar-site li{
+	
+	list-style-type: none;
+	width: 350px;
+	height: 60px;
+	border: 1px solid white;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+section.acessar-site a{
+	line-height: 60px;
+	text-decoration: none;
+	font-size: 27px;
+}
+
+
+/************Capturar Email**************/
+
+
+
+/*****************Footer********************/
+
+
+
+
+
+/*************Media Screen And************/
+
+@media screen and (max-width: 1050px){
+
+	section.sobre .container-sobre{
+	width: 50%;
+	float: left;
+	margin-top: 60px;
+}
+	section.sobre .container-sobre p{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: justify;
+	font-size:  18px;
+	line-height: 20px;
+	
+}
+	section.sobre .container-sobre p.p{
+	
+	font-size: 21px;
+	width: 90%;
+	margin-top: 0;
+}
+	section.sobre .container  h2{
+	
+	margin-bottom: 20px;
+	
+
+}
+section.captura-email form{
+	width: 55%;
+	min-width: 280px;
+	height: 400px;
+	margin-bottom: 50px;
+
+	margin:  auto;
+}
+
+}
+@media screen and (max-width: 920px){
+	header.topo nav.desktop{
+		display: none;
+	}
+	header.topo nav.mobile{
+		display: block;
+	}
+	section.public .redes-sociais{
+	width: 100%;
+	height: 60px;
+	float: left;
+	border: 1px solid white;
+	border-left: 0;
+	margin: 0 auto;
+}
+section.public .container-redes-sociais{
+	width: 100%;
+	margin-top: 0;
+	margin: 0 auto;
+
+}
+section.public .container-redes-sociais div{
+	width: 25%;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+
+}
+.banner-cursos .videoz{
+	
+	border-top: 0;
+	
+}
+section.public .rectangle{
+	display: none;
+}
+
+.redes-sociais img{
+	width: 30px;
+	height: 30px;
+	
+
+}
+.redes-sociais img:hover{
+	border: 1px solid white;
+}
+
+	section.public .banner-cursos{
+	width: 100%;
+	height: 400px;
+
+}
+
+
+	section.sobre .container-sobre{
+	width: 100%;
+	
+}
+section.sobre .img-sobre{
+
+	width: 50%;
+	
+	padding: 20px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 60px;
+	
+}
+.img-sobre img{
+	
+	width: 90%;
+	height: auto;
+	border-radius: 60px;
+}
+
+
+
+	}
+@media screen and (max-width: 850px){
+
+section.acessar-site h2{
+	width: 500px;
+	
+	font-size: 20px;
+	
+}
+
+
+}
+@media screen and (max-width: 700px){
+
+section.sobre .container > h2{
+	width: 520px;
+	font-size: 23px;
+
+}
+section.sobre .container > h2.h2{
+	width: 250px;
+}
+section.sobre .img-sobre{
+
+	width: 90%;
+	
+
+	
+}
+
+
+}
+@media screen and (max-width: 620px){
+	section.sobre .container > h2{
+	width: 320px;
+	
+
+}
+section.sobre{
+	width: 100%;
+	height: 600px;
+	margin-top: 30px;
+	text-align: center;
+}	
+section.sobre .container-sobre{
+	margin-bottom: 100px;
+}
+section.acessar-site h2{
+	width: 250px;
+	
+	font-size: 20px;
+	
+}
+
+}
+
+

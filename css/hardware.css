@@ -1,0 +1,444 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Newsreader', serif;
+	color: white;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.w50{
+	width: 50%;
+}
+.w100{
+	width: 100%;
+}
+
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+div.bg{
+	
+	width: 100%;
+	height:auto;
+	background-color: black;
+}
+/************Voltar inicio**************/
+section.topo{
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	
+	position: fixed;
+	top: 90%;
+	z-index: 100;
+}
+section.topo .topo-btn{
+	width: 60px;
+	height: 100%;
+	background-image: url('../imagens/seta.webp');
+	background-size: contain;
+	float:right;
+	margin-right: 3%;
+
+	
+}
+
+
+/*******************/
+section.public{
+	width: 100%;
+	height: 600px;
+	margin-top: 55px;
+	float: left;
+	background-color: rgba(0,0,0,0,);
+}
+section.public .redes-sociais{
+	width: 5%;
+	height: 600px;
+	float: left;
+	border: 1px solid white;
+	border-left: 0;
+}
+section.public .container-redes-sociais{
+	width: 100%;
+	margin-top: 310px;
+	text-align: center;
+}
+section.public .container-redes-sociais div{
+	width: 100%;
+	margin-top: 35px;
+}
+.redes-sociais img{
+	width: 30px;
+	height: 30px;
+}
+.redes-sociais img:hover{
+	border: 1px solid white;
+}
+
+section.public .banner-cursos{
+	width: 95%;
+	height: 100%;
+	float: left;
+	background-image: url(../imagens/banner-hardware.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 10% 40%;
+}
+.banner-cursos .videoz{
+	width: 100%;
+	height: 100% ;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+
+
+
+
+
+
+/*******************Sobre***************/
+
+
+section.cursos{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 200px;
+}
+
+section.cursos .container >h2{
+	font-size: 27px;
+	width: 450px;
+	background-color: black;
+	margin: 0 auto;
+	position: relative;
+	top: -15px;
+	text-transform: uppercase;
+
+}
+section.cursos .container-cursos{
+	width: 100%;
+	height: auto;
+	margin-top: 200px;
+}
+.container-cursos .curso-ind{
+	width: 33%;
+	height: 250px;
+	
+	float: left;
+	margin-top: 20px;
+
+}
+.curso-ind .curso{
+	width: 90%;
+	height: 100%;
+	background-image: linear-gradient(to top right,rgba(255,255,255,0.2),black,rgba(255,255,255,0.3));
+	border-radius: 25px;	
+	border: 3px solid rgba(255,255,255,0.2);
+	margin: 0 auto;
+	cursor: pointer;
+
+}
+.curso img{
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	border-radius: 25px;
+	margin-top: 11px;
+	z-index: 1;
+}
+.curso h2{
+	width: 90%;
+	height: 95px;
+	margin: 0 auto;
+	font-size: 26px;
+	background-color: rgba(0,0,0,0.8);
+	border-bottom-left-radius:   24px;
+	border-bottom-right-radius: 24px;
+	position: relative;
+	line-height: 45px;
+	top: -99px;
+	z-index: 3;
+	
+	
+}
+.curso li{
+	list-style-type: none;
+	position: relative;
+	top: -143px;
+	width: 150px;
+	height: 40px;
+	border: 1px solid white;
+	margin: 0 auto;
+	border-radius: 10px;
+	transition: 0.7s;
+	z-index: 4;
+	
+
+}
+.curso li a {
+	line-height: 40px;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	z-index: 5;
+
+}
+
+.curso li:hover{
+	background-color: rgba(255,255,255,0.2);
+	transition: 0.5s;
+	
+}
+
+/************Capturar Email**************/
+
+
+
+/*****************Footer********************/
+
+
+
+
+
+/*************Media Screen And************/
+
+@media screen and (max-width: 1050px){
+
+	section.sobre .container-sobre{
+	width: 50%;
+	float: left;
+	margin-top: 60px;
+}
+	section.sobre .container-sobre p{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	font-size:  18px;
+	line-height: 20px;
+	
+}
+	section.sobre .container-sobre p.p{
+	
+	font-size: 21px;
+	width: 90%;
+	margin-top: 0;
+}
+	section.sobre .container > h2{
+	width: 320px;
+	margin-bottom: 20px;
+	
+
+}
+.container-cursos .curso-ind{
+	width: 50%;
+	height: 280px;
+	
+	
+	
+
+}
+
+}
+@media screen and (max-width: 920px){
+	header.topo nav.desktop{
+		display: none;
+	}
+	header.topo nav.mobile{
+		display: block;
+	}
+	section.public .redes-sociais{
+	width: 100%;
+	height: 60px;
+	float: left;
+	border: 1px solid white;
+	border-left: 0;
+	margin: 0 auto;
+}
+section.public .container-redes-sociais{
+	width: 100%;
+	margin-top: 0;
+	margin: 0 auto;
+
+}
+section.public .container-redes-sociais div{
+	width: 25%;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+
+}
+.banner-cursos .videoz{
+	
+	border-top: 0;
+	
+}
+section.public .rectangle{
+	display: none;
+}
+
+.redes-sociais img{
+	width: 30px;
+	height: 30px;
+	
+
+}
+.redes-sociais img:hover{
+	border: 1px solid white;
+}
+
+	section.public .banner-cursos{
+	width: 100%;
+	height: 400px;
+
+}
+
+	section.sobre .container-sobre{
+	width: 100%;
+	
+}
+section.sobre .img-sobre{
+
+	width: 60%;
+	
+	padding: 20px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 60px;
+	
+}
+.img-sobre img{
+	
+	width: 50%;
+	height: 50%;
+}
+
+
+
+	}
+@media screen and (max-width: 850px){
+
+section.acessar-site h2{
+	width: 500px;
+	
+	font-size: 20px;
+	
+}
+
+
+}
+@media screen and (max-width: 700px){
+
+section.sobre .container > h2{
+	width: 520px;
+	font-size: 23px;
+
+}
+section.sobre .container > h2.h2{
+	width: 250px;
+}
+section.sobre .img-sobre{
+
+	width: 90%;
+	
+
+	
+}
+.container-cursos .curso-ind{
+	width: 90%;
+
+	height: 300px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	
+
+}
+
+
+}
+@media screen and (max-width: 620px){
+	section.sobre .container > h2{
+	width: 320px;
+	
+
+}
+section.acessar-site h2{
+	width: 250px;
+	
+	font-size: 20px;
+	
+}
+
+section.topo{
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	
+	position: fixed;
+	top: 90%;
+	z-index: 100;
+	
+}
+section.topo .topo-btn{
+	width: 60px;
+	height: 100%;
+
+	float:right;
+	margin-right: 2%;
+	margin-top: 10px;
+	top: 18px;
+	cursor: pointer;
+	
+	
+}
+
+}
+@media screen and (max-width: 480px){
+	.container-cursos .curso-ind{
+		width: 95%;
+	height: 220px;
+}
+
+section.topo .topo-btn{
+	width: 60px;
+	height: 100%;
+
+	float:right;
+	margin-right: 7%;
+	margin-top: 10px;
+	top: 18px;
+	cursor: pointer;
+	
+	
+}
+section.cursos .container >h2{
+	font-size: 27px;
+	width: 280px;
+
+}
+
+
+
+
+}
+
+

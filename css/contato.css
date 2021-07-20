@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Newsreader', serif;
+	color: white;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.w50{
+	width: 50%;
+}
+.w100{
+	width: 100%;
+}
+
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+div.bg{
+	
+	width: 100%;
+	height:auto;
+	background-color: black;
+}
+
+
+
+/*******************/
+section.public{
+	width: 100%;
+	height: 600px;
+	margin-top: 55px;
+	float: left;
+	background-color: rgba(0,0,0,0,);
+}
+section.public .redes-sociais{
+	width: 5%;
+	height: 600px;
+	float: left;
+	border: 1px solid white;
+	border-left: 0;
+}
+section.public .container-redes-sociais{
+	width: 100%;
+	margin-top: 310px;
+	text-align: center;
+}
+section.public .container-redes-sociais div{
+	width: 100%;
+	margin-top: 35px;
+}
+.redes-sociais img{
+	width: 30px;
+	height: 30px;
+}
+.redes-sociais img:hover{
+	border: 1px solid white;
+}
+
+section.public .banner-cursos{
+	width: 95%;
+	height: 100%;
+	float: left;
+	background-image: url(../imagens/banner-contato.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+}
+.banner-cursos .videoz{
+	width: 100%;
+	height: 100% ;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+
+section.public .rectangle{
+	width: 5%;
+	height: 100%;
+	float:left;
+	border:1px solid white;
+}
+
+
+/*******************Public***************/
+section.pedidos{
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 200px;
+	text-align: center;
+
+}
+section.pedidos .container-pedidos{
+	width:400px;
+	margin: 0 auto;
+	text-align: center;
+}
+.pedidos h2{
+	font-size: 34px;
+	
+	font-weight: normal;
+	width: 300px;
+	background-color: black;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	position: relative;
+	top: -15px;
+}
+.pedidos p{
+	font-size: 22px;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	line-height: 30px;
+	margin-bottom: 50px;
+	}
+.container-pedidos form{
+		
+		width: 100%;
+		margin: 0 auto;
+
+}
+.container-pedidos input[type=text]{
+	width: 100%;
+	height: 32px;
+
+	margin-bottom: 15px;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+.container-pedidos textarea{
+	width: 100%;
+	height: 100px;
+
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 7px;
+	resize: vertical;
+	margin-bottom: 15px;
+}
+.container-pedidos input[type=submit]{
+	width: 45%;
+	height: 32px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 19px;
+	color:  black;
+	border: 0;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-bottom: 200px;
+}
+
+
+
+/*************Media Screen And************/
+
+@media screen and (max-width: 1050px){
+
+	section.sobre .container-sobre{
+	width: 50%;
+	float: left;
+	margin-top: 60px;
+}
+	section.sobre .container-sobre p{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size:  18px;
+	line-height: 20px;
+	
+}
+	section.sobre .container-sobre p.p{
+	
+	font-size: 21px;
+	width: 90%;
+	
+}
+	section.sobre .container > h2{
+	width: 320px;
+	margin-bottom: 20px;
+	
+
+}
+}
+@media screen and (max-width: 920px){
+	header.topo nav.desktop{
+		display: none;
+	}
+	header.topo nav.mobile{
+		display: block;
+	}
+	section.public .redes-sociais{
+	width: 100%;
+	height: 60px;
+	float: left;
+	border: 1px solid white;
+	border-left: 1px solid white;
+	margin: 0 auto;
+}
+section.public .container-redes-sociais{
+	width: 100%;
+	margin-top: 0;
+	margin: 0 auto;
+	
+
+}
+section.public .redes-sociais{
+	border-left: 0;
+}
+section.public .container-redes-sociais div{
+	width: 25%;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+
+}
+.banner-cursos .videoz{
+	
+	border-top: 0;
+	
+}
+
+
+.redes-sociais img{
+	width: 30px;
+	height: 30px;
+	
+
+}
+.redes-sociais img:hover{
+	border: 1px solid white;
+}
+
+	section.public .banner-cursos{
+	width: 100%;
+	height: 400px;
+
+}
+section.pedidos .container-pedidos{
+	width: 450px;
+	
+}
+
+
+
+
+
+
+
+	}
+
+@media screen and (max-width: 700px){
+
+section.sobre .container > h2{
+	width: 520px;
+	font-size: 23px;
+
+}
+section.sobre .container > h2.h2{
+	width: 250px;
+}
+section.sobre .img-sobre{
+
+	width: 90%;
+	
+
+	
+}
+
+
+}
+@media screen and (max-width: 620px){
+	section.sobre .container > h2{
+	width: 320px;
+	
+
+}
+section.pedidos{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 200px;
+	text-align: center;
+
+}
+section.acessar-site h2{
+	width: 250px;
+	
+	font-size: 20px;
+	
+}
+section.captura-email h2{
+	font-weight: normal;
+	margin-bottom: 50px;
+	font-size: 30px;
+	position: relative;
+	top: -10px;
+	width: 350px;
+	background-color: black;
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+}
+section.pedidos .container-pedidos{
+	width: 90%;
+	
+}
+}
+
+
